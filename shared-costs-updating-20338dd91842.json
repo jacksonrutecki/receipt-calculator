@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "shared-costs-updating",
+  "private_key_id": "20338dd918429bd2106622571d700be5d8dabc62",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC6PhTZPgDBgEyX\nk8igfcLRvbNkVZVw/9dXeTS85hM4/+sRPk2sZC3BJ+3Gd557tgkh6VCNVlFlf0vm\nN1wjKrjqaZo9Nukj7LX0cZ9DIj4QdAszbBz+KQTwl+Yoh/OueRATBzKZWXAVwlaj\nxpnDFbINiIo0JZcLUEtri49CCKtajz0N6LI9V64zZtnEDUlRldewF7tqKTB/L2ln\nqm6Vda+asHcT8e24R4iqqwwXVt+1JIRmqQAOGh5+M4ffE6rTqFoMgTbx33rAAxV/\n4i3brXayWUgExmlQ5AGQX+IAycFTBQ5jSMRwGRdDyCsjQA8pL0hpDpKo0VFu4+o2\nyaWfdw2pAgMBAAECggEACoTtZUhP314NZW3U0gDMb0+PSXpehJmEupV3XbiCizCE\nQM7zsOofHfbxAonY1xy05xgQI02F7y1Jlo0XrIpSE7Znfm/iqvNooxAEWnS9i+0c\nAVloyU+8jlDMEIu+PyNqHaMFT/1J3AbEIT+7SVYpPoOw56lcXsiYG/DP5H9MG2Md\nHZaMNMP1H5l+g237QomNSf5/9knzL8KIOaHvaXIKrDNFD/j9256G2JLk49X0P2H4\nkHh4WVEt+UlRlJ0b7Fc75zTJCBrmCHwzvARW7d4v/GQ/v+Sc7qV5lWpT/bmQFI1Q\njsq41MGYbUbqup6UNgoSFoM9bQtCn5YZsSDwM1rF0QKBgQD6lZfzR8xN8JlN/LAu\nyR99XJEkF92zJruGtjSwuD/My4fYwKZe3xVHCJBZSdvBixMqgQCZ1ukXJqwbBzOD\nOYKvbqhH7K4fp/qZs9dcSSXkxEW/e/tUhv0MGoKMAPKv4gvwH5yZMeh5sZAnwZE2\n80ECYyLwvXHFUl0dMbRlptatcQKBgQC+RIERTj8goYH9p24Rq7hrj5icKO9zGHLH\nrxa7TgmkYGwOWsK0VV7MDDHROaxjQbJC7oif6KR15zzzSLZfH3LSe22H50cdL/9o\nmVXIKTxg6rbpSU5tBqokyAFkNTWupg0WwNSk7es8jw6T+Qzi56HTsqXYy2rpkHJ7\nxuir6p+nuQKBgA5DCVztTzF4aiFIKnbfN42ZASG+wf16TN4D7MfKFMeBJgAuJsnr\nhHiAgkayr3E6iyK2KOSYmLeamd0H8eScF1YIxEcjr11Z4CdzVuSHvUJh8V5OniVX\ncXuI3rk9LJLaGLfX9L+7WXHjq0K3/53TBnYuUkTFY35Ji8cnlw7aCgnhAoGAKoU4\nqttntC0j1cHzETPlFPSUUGG9kWUnUYTJebZo5Tk/LL4PwSlK9CLNh0pyQgROiDKy\nibn99vNkZaIcT4nBqVQ4GCUReW5ej8ukpgTBH4+UrPHa+vaAU5P266QQiSVGy4zw\neKNK7M+znFIOFS9atOq5sYdULzo+u3aqTLE0WNECgYAX+ddxdhubD9now5HYBi/7\nus2Es9gw35ezo5nHZXo+/yxQWXmqGrXYSchViAw6aFZiAfYc7kMJWQJzScb8yeDh\nRi5+hZGV/ECXI6hAfJb/POJL5xgNVgIzrbEwY3+H++sbaDXqvxlvCL4FcKugrgsu\nf2XQ1g+FeFYKDXemKZkuAg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "shared-costs-service-account@shared-costs-updating.iam.gserviceaccount.com",
+  "client_id": "116914039433342952186",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shared-costs-service-account%40shared-costs-updating.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
