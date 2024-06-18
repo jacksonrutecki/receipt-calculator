@@ -12,10 +12,12 @@
 #   - when this button is pressed, a blank textbox will pop up where the receipt can be added
 # - an "execute" button will be placed at the bottom, where the totals will be returned in the GUI and the Google Sheets file is updated
 
-from receiptcalc_2 import *
+from receiptcalc2 import *
 import tkinter as tk
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+
+# get current date and time
 
 class MainWindow:
     def __init__(self, root, buyers, dir = None):
@@ -25,7 +27,7 @@ class MainWindow:
             creds = ServiceAccountCredentials.from_json_keyfile_name(dir, scope)
             client = gspread.authorize(creds)
 
-            sheet = client.open("Shared Costs")
+            sheet = client.open("Shared Costs 51")
             self.sheet_instance = sheet.get_worksheet(1) # specifies working in the second worksheet (UPDATE WHEN WE MOVE WORKSHEETS)
 
             self.initUpdateSheetButton()
@@ -124,7 +126,7 @@ class MainWindow:
         
         strout = ""
         for id in listedItems:
-            strout += (id + ": $" + str(sum(map(lambda x: x.cost, self.idhash[id])))) + "\n"
+            strout += (id + ": $" + str(sum(map(lambda x: float(x.cost), self.idhash[id])))) + "\n"
 
         return(strout)
     

@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run "receiptcalcGUI_2.bat", 0, True

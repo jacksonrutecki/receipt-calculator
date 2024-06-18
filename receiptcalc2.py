@@ -17,30 +17,27 @@ def receiptcalc(receiptString):
         def formatName(self):
             return("- " + self.name + " ($" + str(self.cost) + ")\n")
 
-    # read the receipt into an array with each line of the receipt being an index in the array
-    #receiptString = readFileToArray("fullReceipt.txt")
-
     # take the receipt, and sort it into a list of grocery items with an associated name and cost
     # NOTE: this can be abstracted into a function to potentially work with multiple different kinds of receipts
     receiptItems = []
     for i in range(len(receiptString)):
-        if receiptString[i] == "Payment Details": # terminate at the end of the receipt
-            break
+            if receiptString[i] == "Payment Details": # terminate at the end of the receipt
+                break
 
-        # differentiate between regular price and sale prices
-        if receiptString[i + 1] == "Regular Price":
-            cost = 0
-            if receiptString[i + 3] == "Savings":
-                cost = float(receiptString[i + 8][1:])
-            else:
-                cost = float(receiptString[i + 4][1:])
-            receiptItems.append(GroceryItem(receiptString[i], cost))
+            # differentiate between regular price and sale prices
+            if receiptString[i + 1] == "Regular Price":
+                cost = 0
+                if receiptString[i + 3] == "Savings":
+                    cost = float(receiptString[i + 8][1:])
+                else:
+                    cost = float(receiptString[i + 4][1:])
+                receiptItems.append(GroceryItem(receiptString[i], cost))
+            
+            if receiptString[i] == "ADDITIONAL DISCOUNTS":
+                if not('Member/4u Savings\t' in receiptString[i + 1]):
+                    midIndex = receiptString[i+1].index("\t")
+                    receiptItems.append(GroceryItem(receiptString[i + 1][0:midIndex], -1 * float(receiptString[i + 1][(midIndex + 3):])))
         
-        if receiptString[i] == "ADDITIONAL DISCOUNTS":
-            if not('Member/4u Savings\t' in receiptString[i + 1]):
-                midIndex = receiptString[i+1].index("\t")
-                receiptItems.append(GroceryItem(receiptString[i + 1][0:midIndex], -1 * float(receiptString[i + 1][(midIndex + 3):])))
-
     finalTotal = float(receiptString[len(receiptString) - 2][1:])
     studentDisc = finalTotal * 0.05
     receiptItems.append(GroceryItem("Student Discount", (-1 * studentDisc)))
